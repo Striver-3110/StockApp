@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Plotly from 'plotly.js-dist';
 // import 'plotly.js-dist/lib/d3';
 
 const CandleStick = (props) => {
+
+
+  const candleStickRef = useRef(null);
+  const {url,containerWidth} = props;
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const {url}  = props
+        // const {url}  = props
         console.log(url)
         const response = await fetch(url);
         const data = await response.text();
@@ -35,37 +41,39 @@ const CandleStick = (props) => {
           yaxis: 'y'
         };
         const layout = {
-        //   dragmode: 'zoom',
-        //   showlegend: false,
-        //   xaxis: {
-        //     autorange: true,
-        //     title: 'Date',
-        //     rangeselector: {
-        //       x: 0,
-        //       y: 1.2,
-        //       xanchor: 'left',
-        //       font: {size:8},
-            //   buttons: [{
-            //     step: 'month',
-            //     stepmode: 'backward',
-            //     count: 1,
-            //     label: '1 month'
-            //   }, {
-            //     step: 'month',
-            //     stepmode: 'backward',
-            //     count: 6,
-            //     label: '6 months'
-            //   }, {
-            //     step: 'all',
-            //     label: 'All dates'
-            //   }]
-            // }
-        //   },
-        //   yaxis: {
-        //     autorange: true,
-        //   },
-          plot_bgcolor: '#161D29',
-          paper_bgcolor: '#161D29',
+          height: 500,
+          width: containerWidth,
+          dragmode: 'zoom',
+          showlegend: false,
+          xaxis: {
+            autorange: true,
+            title: 'Date',
+            rangeselector: {
+              x: 0,
+              y: 1.2,
+              xanchor: 'left',
+              font: {size:8},
+              // buttons: [{
+              //   step: 'month',
+              //   stepmode: 'backward',
+              //   count: 1,
+              //   label: '1 month'
+              // }, {
+              //   step: 'month',
+              //   stepmode: 'backward',
+              //   count: 6,
+              //   label: '6 months'
+              // }, {
+              //   step: 'all',
+              //   label: 'All dates'
+              // }]
+            }
+          },
+          yaxis: {
+            autorange: true,
+          },
+          plot_bgcolor: 'rgba(45, 58, 82, 0.6)',
+          paper_bgcolor: 'rgba(45, 58, 82, 0.4)',
           font: {
             color: 'white' // Set text color to white for better contrast
           },
@@ -80,9 +88,9 @@ const CandleStick = (props) => {
       }
     };
     fetchData();
-  }, []);
+  }, [url, containerWidth]);
 
-  return <div id='Candle-stick' />;
+  return <div className='border rounded-lg overflow-hidden' id='Candle-stick' ref={candleStickRef}/>;
 };
 
 export default CandleStick;

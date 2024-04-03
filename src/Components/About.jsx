@@ -16,13 +16,13 @@ const About = () => {
   w-11/12 max-w-maxContext justify-between gap-10 text-center text-white'
         >
           <header className='mx-auto py-20 text-4xl font-semibold lg:w-[70%]'>
-            Driving Innovation in Online Education for a{' '}
+            Driving Innovation in Stock Market for a{' '}
             <HighlightText text={'Brighter Future'} />
             <p className='mx-auto mt-3 text-center text-base font-medium text-richblack-300 lg:w-[95%]'>
-              Studynotion is at the forefront of driving innovation in online
-              education. We're passionate about creating a brighter future by
-              offering cutting-edge courses, leveraging emerging technologies,
-              and nurturing a vibrant learning community.
+              StockNotion is at the fore front of driving innovation in online
+              Stock Market. We're passionate about creating a brighter future by
+              offering cutting-edge predictions, leveraging emerging technologies,
+              and nurturing a vibrant community.
             </p>
           </header>
           <div className='sm:h-80px lg:h-[150px]'></div>
@@ -42,20 +42,10 @@ const About = () => {
                 Our Founding Story
               </h1>
               <p className='text-base font-medium text-richblack-300 lg:w-[95%]'>
-                Our e-learning platform was born out of a shared vision and
-                passion for transforming education. It all began with a group of
-                educators, technologists, and lifelong learners who recognized
-                the need for accessible, flexible, and high-quality learning
-                opportunities in a rapidly evolving digital world.
+              StockPredict was founded by a team of financial analysts and data scientists who shared a common vision of democratizing access to stock market insights. Our journey began with a deep understanding of the challenges faced by investors in navigating the complex world of finance.
               </p>
               <p className='text-base font-medium text-richblack-300 lg:w-[95%]'>
-                As experienced educators ourselves, we witnessed firsthand the
-                limitations and challenges of traditional education systems. We
-                believed that education should not be confined to the walls of a
-                classroom or restricted by geographical boundaries. We
-                envisioned a platform that could bridge these gaps and empower
-                individuals from all walks of life to unlock their full
-                potential.
+              We recognized the need for a platform that could analyze vast amounts of data and provide clear, actionable recommendations to investors of all levels. With this vision in mind, we set out to develop StockPredict, a cutting-edge tool designed to empower individuals to make smarter investment decisions.
               </p>
             </div>
 
@@ -73,12 +63,7 @@ const About = () => {
                 Our Vision
               </h1>
               <p className='text-base font-medium text-richblack-300 lg:w-[95%]'>
-                With this vision in mind, we set out on a journey to create an
-                e-learning platform that would revolutionize the way people
-                learn. Our team of dedicated experts worked tirelessly to
-                develop a robust and intuitive platform that combines
-                cutting-edge technology with engaging content, fostering a
-                dynamic and interactive learning experience.
+              At StockPredict, our vision is to revolutionize the way investors approach the stock market. We envision a future where anyone, regardless of their background or expertise, can confidently invest in the stock market and achieve their financial goals.regardless of their background or expertise, can confidently invest their financial goals.
               </p>
             </div>
             <div className='my-24 flex lg:w-[40%] flex-col gap-10'>
@@ -86,12 +71,7 @@ const About = () => {
                 Our Mission
               </h1>
               <p className='text-base font-medium text-richblack-300 lg:w-[95%]'>
-                Our mission goes beyond just delivering courses online. We
-                wanted to create a vibrant community of learners, where
-                individuals can connect, collaborate, and learn from one
-                another. We believe that knowledge thrives in an environment of
-                sharing and dialogue, and we foster this spirit of collaboration
-                through forums, live sessions, and networking opportunities.
+              Our mission is to provide investors with the tools and insights they need to navigate the stock market with confidence. We are committed to delivering accurate, data-driven predictions and empowering our users to make informed investment decisions that drive long-term financial success.
               </p>
             </div>
           </div>

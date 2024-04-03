@@ -3,6 +3,7 @@ import CandleStick from './Charts/CandleStick';
 import Line from './Charts/Line';
 import HighlightText from './HighlightText';
 import Investing from './Investing'
+import FinancialJourney from './FinancialJourney';
 
 export default function Home() {
   const [containerWidth, setContainerWidth] = useState(0);
@@ -41,6 +42,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <FinancialJourney/>
       {/* <JoinUs/> */}
     </div>
   );

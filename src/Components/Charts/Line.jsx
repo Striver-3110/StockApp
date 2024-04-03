@@ -58,7 +58,16 @@ const Line = (props) => {
     },[url,containerWidth])
        
   return (
-    <div id={`Linechart${val1}${val2}`} className='border rounded-lg' ref={lineRef}></div>
+    <>
+    <div className='text-center font-semibold text-2xl text-white'>
+
+<h3 className='bg-richblack-800 border rounded'>
+      AAPL Stock {`${val1}-${val2}`}
+
+</h3>
+    <div id={`Linechart${val1}${val2}`} className=' mt-3 border rounded-lg' ref={lineRef}></div>
+    </div>
+    </>
   )
 }
 

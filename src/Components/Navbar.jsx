@@ -15,27 +15,27 @@ const Navbar = () => {
           <ul className='flex font-semibold justify-between'>
             <Link to="/">
               <li style={{ transition: 'background-color 0.3s, color 0.3s' }} onClick={()=>setLink('Dashboard')} className={`md:px-4 md:py-2 text-indigo-500 ${link == 'Dashboard' ?'p-2 bg-richblack-800 rounded-lg' : ''}`}>
-                <a href='#'>Dashboard</a>
+                Dashboard
               </li>
             </Link>
             <Link to="/search">
             <li style={{ transition: 'background-color 0.3s, color 0.3s' }} onClick={()=>setLink('Search')} className={`md:px-4 md:py-2 text-indigo-500 ${link == 'Search' ?'p-2 bg-richblack-800 rounded-lg' : ''}`}>
-              <a href='#'>Search</a>
+              Search
             </li>
             </Link>
             <Link to="/Explore">
             <li style={{ transition: 'background-color 0.3s, color 0.3s' }} onClick={()=>setLink('Explore')} className={`md:px-4 md:py-2 text-indigo-500 ${link == 'Explore' ?'p-2 bg-richblack-800 rounded-lg' : ''}`}>
-              <a href='#'>Explore</a>
+              Explore
             </li>
             </Link>
             <Link to="/About">
             <li style={{ transition: 'background-color 0.3s, color 0.3s' }} onClick={()=>setLink('About')} className={`md:px-4 md:py-2 text-indigo-500 ${link == 'About' ?'p-2 bg-richblack-800 rounded-lg' : ''}`}>
-              <a href='#'>About</a>
+              About
             </li>
             </Link>
             <Link to="/contact">
             <li style={{ transition: 'background-color 0.3s, color 0.3s' }} onClick={()=>setLink('Contact')} className={`md:px-4 md:py-2 text-indigo-500 ${link == 'Contact' ?'p-2 bg-richblack-800 rounded-lg' : ''}`}>
-              <a href='#'>Contact</a>
+              Contact
             </li>
             </Link>
           </ul>

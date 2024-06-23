@@ -12,32 +12,35 @@ const SearchPage = () => {
 
   const handleSearch = async e => {
     e.preventDefault();
-    try {
-        const data = symbol;
-        console.log(data)
-        const response = await fetch(`http://127.0.0.1:3001/predict`, {
-          method: "GET", // *GET, POST, PUT, DELETE, etc.
-          mode: "cors", // no-cors, *cors, same-origin
-          headers: {
-            "Content-Type": "application/json",
-          },
-          // body: JSON.stringify(data), // body data type must match "Content-Type" header
-        });
-        console.log(response);
-        // setPrediction(response.data.prediction);
-      } catch (error) {
-        console.error("error in axios req", error);
-        // Handle errors appropriately, e.g., display an error message to the user
-      }
+    // e.preventDefault()
+    // try {
+      //   const data = symbol;
+      //   console.log(data)
+      //   const response = await fetch(`http://127.0.0.1:5000/predict`, {
+      //     method: "GET", // *GET, POST, PUT, DELETE, etc.
+      //     mode: "cors", // no-cors, *cors, same-origin
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     // body: JSON.stringify(data), // body data type must match "Content-Type" header
+      //   });
+      //   console.log(response);
+      //   // setPrediction(response.data.prediction);
+      // } catch (error) {
+      //   console.error("error in axios req", error);
+      //   // Handle errors appropriately, e.g., display an error message to the user
+      // }
+
+
+      
     setPredictionData(null)
-    e.preventDefault()
     // console.log(search)
 
-    const res = axios.get("http://localhost:3001/predict")
-    // Mock API call to fetch prediction data (replace with actual API call)
+    // const res = axios.get("http://localhost:3001/predict")
+    // // Mock API call to fetch prediction data (replace with actual API call)
     const predictionData = await fetchPredictionData(search)
     setPredictionData(predictionData)
-    // setSearch("");
+    setSearch("");
   }
 
   // Function to fetch prediction data (replace with actual API call)
